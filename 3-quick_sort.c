@@ -34,8 +34,8 @@ void swap_ints(int *a, int *b)
 int lomuto_partition(int *array, size_t size, int left, int right)
 {
 	int *pivot, above, below;
-	pivot = array + right;
 
+	pivot = array + right;
 	for (above = below = left; below < right; below++)
 	{
 		if (array[below] < *pivot)
